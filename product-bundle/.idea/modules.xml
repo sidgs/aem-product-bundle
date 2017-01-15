@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/product-bundle.iml" filepath="$PROJECT_DIR$/product-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bundle/product-bundle-bundle.iml" filepath="$PROJECT_DIR$/bundle/product-bundle-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/content/product-bundle-content.iml" filepath="$PROJECT_DIR$/content/product-bundle-content.iml" />
+    </modules>
+  </component>
+</project>
