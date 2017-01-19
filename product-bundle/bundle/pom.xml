@@ -7,7 +7,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.clover</groupId>
-        <artifactId>product-bundle</artifactId>
+        <artifactId>product</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,9 +15,9 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>product-bundle-bundle</artifactId>
+    <artifactId>product-bundle</artifactId>
     <packaging>bundle</packaging>
-    <name>product-bundle Bundle</name>
+    <name>product-bundle</name>
 
     <dependencies>
 

@@ -6,12 +6,12 @@
     <!-- ====================================================================== -->
 
     <groupId>com.clover</groupId>
-    <artifactId>product-bundle</artifactId>
+    <artifactId>product</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>product-bundle - Reactor Project</name>
-    <description>Maven Multimodule project for product-bundle.</description>
+    <name>product- Reactor Project</name>
+    <description>Maven Multimodule project for product.</description>
 
     <prerequisites>
         <maven>3.0.2</maven>
