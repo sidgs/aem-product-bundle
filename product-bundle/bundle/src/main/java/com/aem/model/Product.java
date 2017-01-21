@@ -8,14 +8,42 @@ public class Product {
     String name ;
     String description ;
     int id ;
+    String style;
+    String brand;
+    String image;
+    
+    
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getStyle() {
+		return style;
+	}
+
+	public void setStyle(String style) {
+		this.style = style;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
     public String getDescription() {
         return description;
