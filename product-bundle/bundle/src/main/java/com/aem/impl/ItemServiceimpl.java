@@ -7,13 +7,19 @@ import java.util.TreeSet;
 
 import com.aem.ItemService;
 import com.aem.model.Item;
+import org.apache.felix.scr.annotations.Service;
 
+@Service (ItemService.class)
 public class ItemServiceimpl implements ItemService{
 	
      Map<Number,Item> map=new HashMap<Number,Item>();
-      
+
+	public Map<Number, Item> getMap() {
+		return map;
+	}
+
 	public void add(Item item) {
-		map.put(item.getITEM_ID(),item);
+		map.put(item.getItemId(),item);
 		
 	}
 
@@ -33,7 +39,7 @@ public class ItemServiceimpl implements ItemService{
 	public void changePrice(Float price,Number id) {
 		if(map.containsKey(id)){
 		  Item obj=map.get(id);
-		  obj.setITEM_PRICE(price);
+		  obj.setItemPrice(price);
 		  
 		}
 		
@@ -42,7 +48,7 @@ public class ItemServiceimpl implements ItemService{
 	public void changeQty(Number quantity,Number id) {
 		if(map.containsKey(id)){
 			Item obj = map.get(id);
-			obj.setITEM_QTY(quantity);
+			obj.setItemQty(quantity);
 		}
 		
 		

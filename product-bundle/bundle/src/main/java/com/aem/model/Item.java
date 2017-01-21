@@ -1,49 +1,53 @@
 package com.aem.model;
 
 public class Item {
-	Number PRODUCT_ID;
-	Number STYLE_ID;
-	Number ITEM_ID;
-	Number ITEM_QTY;
-	Float ITEM_PRICE;
-	
-	public Item(Number PRODUCT_ID, Number STYLE_ID, Number ITEM_ID, Number ITEM_QTY, Float ITEM_PRICE) {
+
+	Number productId; // optional
+	Number styleId; //required
+	Number itemId; // required ; but generated
+	Number itemQty; // optional
+	Float itemPrice; // optional
+
+	public Item() {
+	}
+
+	public Item(Number productId, Number styleId, Number itemId, Number itemQty, Float itemPrice) {
 		super();
-		this.PRODUCT_ID = PRODUCT_ID;
-		this.STYLE_ID = STYLE_ID;
-		this.ITEM_ID = ITEM_ID;
-		this.ITEM_QTY = ITEM_QTY;
-		this.ITEM_PRICE = ITEM_PRICE;
+		this.productId = productId;
+		this.styleId = styleId;
+		this.itemId = itemId;
+		this.itemQty = itemQty;
+		this.itemPrice = itemPrice;
 	}
-	public Number getPRODUCT_ID() {
-		return PRODUCT_ID;
+	public Number getProductId() {
+		return productId;
 	}
-	public void setPRODUCT_ID(Number PRODUCT_ID) {
-		this.PRODUCT_ID = PRODUCT_ID;
+	public void setProductId(Number productId) {
+		this.productId = productId;
 	}
-	public Number getSTYLE_ID() {
-		return STYLE_ID;
+	public Number getStyleId() {
+		return styleId;
 	}
-	public void setSTYLE_ID(Number STYLE_ID) {
-		this.STYLE_ID = STYLE_ID;
+	public void setStyleId(Number styleId) {
+		this.styleId = styleId;
 	}
-	public Number getITEM_ID() {
-		return ITEM_ID;
+	public Number getItemId() {
+		return itemId;
 	}
-	public void setITEM_ID(Number ITEM_ID) {
-		this.ITEM_ID = ITEM_ID;
+	public void setItemId(Number itemId) {
+		this.itemId = itemId;
 	}
-	public Number getITEM_QTY() {
-		return ITEM_QTY;
+	public Number getItemQty() {
+		return itemQty;
 	}
-	public void setITEM_QTY(Number ITEM_QTY) {
-		this.ITEM_QTY = ITEM_QTY;
+	public void setItemQty(Number itemQty) {
+		this.itemQty = itemQty;
 	}
-	public Float getITEM_PRICE() {
-		return ITEM_PRICE;
+	public Float getItemPrice() {
+		return itemPrice;
 	}
-	public void setITEM_PRICE(Float ITEM_PRICE) {
-		this.ITEM_PRICE = ITEM_PRICE;
+	public void setItemPrice(Float itemPrice) {
+		this.itemPrice = itemPrice;
 	}
 	
 

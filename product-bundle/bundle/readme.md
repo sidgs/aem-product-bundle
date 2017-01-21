@@ -24,6 +24,4 @@
         - com.aem.useclass.ProductServiceUse
     
 
-
-
 ## Deploy the service to UAT 
