@@ -11,6 +11,7 @@ public class ProductServiceUse extends WCMUse  {
 
     @Override
     public void activate() throws Exception {
+    	
     }
 
     @Reference
