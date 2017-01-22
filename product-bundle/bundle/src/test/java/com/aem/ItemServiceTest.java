@@ -4,6 +4,7 @@ import com.aem.impl.ItemServiceimpl;
 import com.aem.model.Item;
 import org.apache.felix.scr.annotations.Reference;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Map;
@@ -17,20 +18,21 @@ import java.util.Set;
 public class ItemServiceTest {
 
     @Reference
-    ItemService itemService;
+	static
+	ItemServiceimpl itemService;
 
-    Map mapofItems;
+     static Map mapofItems;
 
     @BeforeClass
-    void setup() {
-        assert (itemService != null );
+    public static  void setup() {
+        //assert (itemService != null );
         if ( itemService instanceof ItemServiceimpl) {
             mapofItems = ((ItemServiceimpl)itemService).getMap();
         }
     }
 
     @Test
-    void add(){
+    public void add(){
 
         Item item = new Item();
         item.setItemId(1231);
@@ -40,7 +42,7 @@ public class ItemServiceTest {
         // Item was created
         assert (mapofItems.containsKey(1231));
         // item was created with the correct data
-        Item result = (Item)mapofItems.get(1232);
+        Item result = (Item)mapofItems.get(1231);
         assert ( result.equals(item));
 
 
@@ -48,7 +50,7 @@ public class ItemServiceTest {
         // query DB for item with id 1231
         // assert that item is found
         // create a new item
-        // compare with the original iteam
+        // compare with the original item
         // assert both are equal
 
 

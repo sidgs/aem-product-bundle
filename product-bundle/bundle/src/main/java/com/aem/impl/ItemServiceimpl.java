@@ -7,9 +7,12 @@ import java.util.TreeSet;
 
 import com.aem.ItemService;
 import com.aem.model.Item;
+
+import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Service;
 
-@Service (ItemService.class)
+@Service (ItemServiceimpl.class)
+@Component(label = "First Item Service", immediate = true, metatype = true)
 public class ItemServiceimpl implements ItemService{
 	
      Map<Number,Item> map=new HashMap<Number,Item>();

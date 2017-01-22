@@ -10,33 +10,27 @@ public interface StyleService {
 
     /**
      *
-     * @param style
+     * Adds a new style to the Map
      */
 	void add( StyleMaster style);
 
     /**
      *
-     * @return
+     * Returns the list of styles in the Map
      */
     List<StyleMaster> getStyles() ;
 
     /**
      *
-     * @param id
-     * @return
+     * Returns a particular style using ID
      */
     StyleMaster getStyle(int id);
 
     /**
      *
-     * @param styleId
+     *Deletes a particular style using ID
      */
     void remove (int styleId);
 
-    /**
-     *
-     * @param style
-     */
-    void noStyle(StyleMaster style);
-
+  
 }
