@@ -8,10 +8,30 @@ import com.aem.model.StyleMaster;
 
 public interface StyleService {
 	
-	void add(StyleMaster style);
-    List<StyleMaster> getStyles();
-    StyleMaster getStyle(int id);
-    void remove (int styleId);
-    void noStyle(StyleMaster style);
 
+    /**
+     *
+     * Adds a new style to the Map
+     */
+	void add( StyleMaster style);
+
+    /**
+     *
+     * Returns the list of styles in the Map
+     */
+    List<StyleMaster> getStyles() ;
+
+    /**
+     *
+     * Returns a particular style using ID
+     */
+    StyleMaster getStyle(int id);
+
+    /**
+     *
+     *Deletes a particular style using ID
+     */
+    void remove (int styleId);
+
+  
 }

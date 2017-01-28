@@ -46,8 +46,4 @@ public class StyleServiceImpl implements StyleService{
 	}
 
 	
-	public void noStyle(StyleMaster style) {
-		
-	}
-	
 	}
